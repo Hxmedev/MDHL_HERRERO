@@ -4,17 +4,30 @@
     padding: 0;
     font-family: sans-serif;
 }
-section{
-    display: inline;
-}
 main{
     position: relative;
 }
-a[href="#"]{
-    color: black;
+footer {
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+footer h3{
+    margin-top: 0.5rem;
 }
 .header{
     display: inline;
+}
+table{
+    height: 40vh;
+    width: 80vh;
+    margin-top: 2rem;
+    margin-right: 10vh;
+    margin-left: 10vh;
 }
 .title{
     padding: 3rem;
@@ -35,7 +48,13 @@ a[href="#"]{
     text-align: center;
 }
 .section_navbar{
-    display: grid;
+    display: flex;
+}
+.section_navbar a{
+    margin-right: 2rem;
+}
+a[href="#"]{
+    color: black;
 }
 .logo{
     height: 5.5rem;
@@ -52,22 +71,48 @@ a[href="#"]{
     width: 10rem;
 }
 .principal_content{
+    text-align: center;
     padding-top: 3.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 40vh;
-}
-.principal_content>article{
-    display: flex;
-    flex-direction: row-reverse;
+    margin-right: 20vh;
+    margin-left: 20vh;
 }
 .section_name{
     color:darkgoldenrod
 }
 .about_article{
+    margin-top: 3rem;
     display: block !important;
     display: block !important;
     text-align: center;
     width: 70vh;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-around;
+}
+.rules_body{
+    margin-top: 3rem;
+    text-align: left;
+}
+.rules_body h2{
+    margin-top: 2rem;
+}
+.games_article h1{
+    margin-top: 2rem;
+    text-align: center;
+}
+.games_article h2,h3{
+    margin-top: 2rem;
+    text-align: left;
+    font-weight: lighter;
+}
+.extra_info h3{
+    font-weight: bolder;
+}
+.extra_info span{
+    font-weight:normal !important;
+}
+.extra_info_contact{
+    display: flex;
+    justify-content: space-between;
 }
