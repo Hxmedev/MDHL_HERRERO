@@ -116,3 +116,20 @@ a[href="#"]{
     display: flex;
     justify-content: space-between;
 }
+.register_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.register_form>label{
+    display: flex;
+    margin-top: 2rem;
+    width: 40vh;
+}
+.register_form>input{
+    align-self: flex-end;
+}
+.register_form label input,span{
+    width: 100%;
+}
