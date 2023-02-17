@@ -4,38 +4,96 @@
     padding: 0;
     font-family: sans-serif;
 }
-section{
-    display: inline;
-}
 main{
     position: relative;
+    min-height: calc(100vh - 40px);
 }
-a[href="#"]{
-    color: black;
+footer {
+    text-align: center;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+footer h3{
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    text-align: center;
+    justify-content: center;
+}
+fieldset>h4{
+    font-size: medium;
+    font-weight: bolder;
+    text-align: left;
+}
+article{
+    min-height: 100vh;
 }
 .header{
-    display: inline;
-}
-.title{
-    padding: 3rem;
-    font-size: xxx-large;
-    font-weight: initial;
+    display: flex;
+    justify-content: center;
+    height: 20vh;
     background-image: url(../assets/design1_image1.jpg);
-    height: 30vh;
     background-position: center;
     background-size: cover;
+}
+table{
+    height: 40vh;
+    width: 100%;
+    margin: 2rem auto;
+    background-image: linear-gradient(to right, rgba(59, 116, 57, 0.637),rgb(197, 159, 88));
+}
+.title{
+    position: relative;
+    width: 40%;
+    font-size: xxx-large;
+    font-weight: initial;
+    text-align: center;
+    align-self: flex-start;
 }
 .title_container{
     position: relative;
 }
 .section_title{
     height: 3rem;
+    padding-top:0.5rem;
     background-color: black;
     color: aliceblue;
     text-align: center;
 }
 .section_navbar{
-    display: grid;
+    display: flex;
+    gap: 1rem;
+}
+.section_navbar a{
+    color: azure;
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-decoration: none;
+}
+.section_navbar a:hover{
+    color:coral;
+    text-decoration:underline;
+    opacity: 0.7;
+}
+a[href="#"]{
+    color: black;
+}
+dl>dt{
+    font-size: medium;
+    font-weight:bolder;
+    margin-top: 2rem;
+}
+dl>dd{
+    text-indent: 2rem;
+}
+dl>ul>li{
+    margin-left: 2rem;
+}
+li{
+    margin-top: 2rem;
 }
 .logo{
     height: 5.5rem;
@@ -52,22 +110,145 @@ a[href="#"]{
     width: 10rem;
 }
 .principal_content{
-    padding-top: 3.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 40vh;
-}
-.principal_content>article{
-    display: flex;
-    flex-direction: row-reverse;
+    text-align: center;
+    background: url(https://cdn.worldvectorlogo.com/logos/anaheim-mighty-ducks-1.svg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 .section_name{
     color:darkgoldenrod
 }
 .about_article{
-    display: block !important;
-    display: block !important;
+    margin-top: 3rem;
+}
+.nav_container{
+    display: flex;
+    justify-content: space-around;
+    background-color: dimgrey;
+    color: azure;
+}
+.rules_body{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    text-align: left;
+}
+.games_article>h2{
+    margin-top: 2rem;
     text-align: center;
-    width: 70vh;
+}
+.games_article>h1{
+margin-top: 2rem;
+}
+.games_article h3,h4{
+    margin-top: 2rem;
+    text-align: left;
+    font-weight: lighter;
+}
+.extra_info h3{
+    font-weight: bolder;
+}
+.extra_info span{
+    font-weight:normal !important;
+}
+.extra_info_contact{
+    display: flex;
+    justify-content: space-between;
+}
+.register_form{
+    max-width: 90vh;
+    margin: 2rem auto;
+    margin-bottom: 0 !important;
+    border: 1px solid salmon;
+    padding: 2rem;
+    text-align:-webkit-center;
+    background-color: rgb(185, 179, 172);
+}
+.register_form>label{
+    display: block;
+    padding: 1rem 0 .5rem;
+    margin-top: 2rem;
+    width: 40vh;
+}
+.register_form>div{
+    margin-top: 2rem;
+}
+.submit_button{
+    border: 0;
+    background: cadetblue;
+    padding: .5rem;
+    color: whitesmoke;
+    margin: 1rem 0;
+    width: auto;
+    text-transform: uppercase;
+}
+.submit_button:hover{
+    background: #3498DB;
+}
+.locations{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.map_container{
+    margin-bottom: 2rem;
+}
+.map_container>iframe{
+    width: 50vh;
+    height: 40vh;
+}
+.principal_data,.checkbox_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox_container{
+    margin:0.5rem auto;
+}
+.principal_data>label{
+    display: flex;
+    margin: 1rem auto;
+}
+fieldset{
+    margin-top: 1.5rem;
+}
+fieldset>span{
+    width: 100%;
+    text-align: left;
+}
+.input_container{
+    display: flex;
+    flex: 40%;
+    justify-self: center;
+}
+.input_container_principal{
+    display: flex;
+    margin-left: 0.1rem;
+    margin-right:0.5rem;
+}
+.permission_info{
+    display: block;
+    margin: 1rem auto;
+}
+.simple_article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.simple_article>img{
+    height: 40vh;
+    width: auto;
+    border-radius: 10%;
+}
+.info_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.637),rgb(236, 215, 177));
+    border-radius: 5%;
 }
