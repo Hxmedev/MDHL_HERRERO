@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mighty Ducks Hockey League</title>
+    <link rel="shortcut icon" href="../assets/LogoMightyducks-01.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">Mighty Ducks Hockey League</h1>
+    </header>
+    <main>
+        <div class="title_container">
+            <h2 class="section_title">Registration</h2>
+            <img src="../assets/LogoMightyducks-01.png" class="logo" alt="Logo_Mighty_Ducks">
+        </div>
+        <div class="principal_content">
+            <div class="nav_container">
+                <nav class="section_navbar">
+                    <a href="../index.html">Home</a>
+                    <a href="about.html">About MDHL</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="rules.html">Rules</a>
+                    <a href="game_info.html">Games</a>
+                    <a href="#">Registration</a>
+                    </nav>
+                    </div>
+                    <article>
+                        <h2>Registration Form</h2>
+                        <form action="../show_data.html" class="register_form" method="get">
+                            <fieldset class="principal_data">
+                                <label for="first_name">
+                                    <span>Player First Name</span>
+                                    <input type="text" id="first_name" name="first_name">
+                                </label>
+                                <label for="lastName">
+                                    <span>Last Name</span>
+                                    <input type="text" id="lastName" name="lastName">
+                                </label>
+                                <label for="streetAdress">
+                                    <span>Street Adress</span>
+                                    <input type="text" id="streetAdress" name="semana">
+                                </label>
+                                <label for="city">
+                                    <span>City</span>
+                                    <input type="text" id="city" name="city">
+                                </label>
+                                <label for="zipCode">
+                                    <span>Zip Code</span>
+                                    <input type="text" id="zipCode" name="zipCode">
+                                </label>
+                                <label for="birthDate">
+                                    <span>Birth Date</span>
+                                    <input type="date" id="birthDate" name="birthDate">
+                                </label>
+                                <div class="checkbox_container">
+                                    <span>Gender:</span>
+                                    <div class="input_container_principal">
+                                        <input type="checkbox" id="female" value="Female" name="gender">
+                                        <label for="female">Female</label>
+                                    </div>
+                                    <div class="input_container_principal">
+                                        <input type="checkbox" id="male" value="Male" name="gender">
+                                        <label for="male">Male</label>
+                                    </div>
+                                </div>
+                                <div class="checkbox_container">
+                                    <span>Grade:</span>
+                                    <div class="input_container_principal">
+                                        <input type="checkbox" id="1st" value="1st" name="grade">
+                                        <label for="1st">1st</label>
+                                    </div>
+                                    <div class="input_container_principal">
+                                        <input type="checkbox" id="2nd" value="2nd" name="grade">
+                                        <label for="2nd">2st</label>
+                                    </div>
+                                    <div class="input_container_principal">
+                                        <input type="checkbox" id="3st" value="3st" name="grade">
+                                        <label for="3st">3st</label>
+                                    </div>
+                                    <div class="input_container_principal">
+                                        <input type="checkbox" id="4st" value="4th" name="grade">
+                                        <label for="4st">4st</label>
+                                    </div>
+                                    <div class="input_container_principal">
+                                        <input type="checkbox" id="5st" value="5th" name="grade">
+                                        <label for="5st">5st</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Which elementary school do you live near?</legend>
+                                <h4>Closest School:</h4>
+                                <div class="checkbox_container">
+                                    <div class="input_container">
+                                        <input type="checkbox" id="ajKatzenmaier" value="Aj Katzenmaier" name="school">
+                                        <label for="ajKatzenmaier">AJ Katzenmaier</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="majoriePHart" value="Majorie P Hart" name="school">
+                                        <label for="majoriePHart">Majorie P Hart</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="howardAYeager" value="Howard A Yeager" name="school">
+                                        <label for="howardAYeager">Howard A Yeager</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="greenbay" value="Greenbay" name="school">
+                                        <label for="greenbay">Greenbay</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="northElementary" value="North Elementary" name="school">
+                                        <label for="northElementary">North Elementary</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="southElementary" value="South Elementary" name="school">
+                                        <label for="southElementary">South Elementary</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>What position(s) do you normally play?(check all that apply)</legend>
+                                <div class="checkbox_container">
+                                    <div class="input_container">
+                                        <input type="checkbox" id="forward" value="forward" name="position">
+                                        <label for="forward">Forward</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="midfield" value="midfield" name="position">
+                                        <label for="midfield">Midfield</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="defense" value="defense" name="position">
+                                        <label for="defense">Defense</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="goalkeeper" value="goalkeeper" name="position">
+                                        <label for="goalkeeper">Goalkeeper</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Uniform Size:</legend>
+                                <div class="checkbox_container">
+                                    <div class="input_container">
+                                        <input type="checkbox" id="youthSmall" value="youthSmall" name="sizeUniform">
+                                        <label for="youthSmall">Youth Small</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="youthMedium" value="youthMedium" name="sizeUniform">
+                                        <label for="youthMedium">Youth Medium</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="youthLarge" value="youthLarge" name="sizeUniform">
+                                        <label for="youthLarge">Youth Large</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="small" value="small" name="sizeUniform">
+                                        <label for="small">Small</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="medium" value="medium" name="sizeUniform">
+                                        <label for="medium">Medium</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="large" value="large" name="sizeUniform">
+                                        <label for="large">Large</label>
+                                    </div>
+                                    <div class="input_container">
+                                        <input type="checkbox" id="extraLarge" value="extraLarge" name="sizeUniform">
+                                        <label for="extraLarge">Extra Large</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Permission to Play</legend>
+                                <span class="permission_info">1, The parent or guardian of the minor registrant, agree that the registrant and i will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury
+                                    associated with hockey and in consideration for the “League” accepting the registrant for its hockey programs and activities, i hereby release, discharge, and/or otherwise indemnify MDHL,
+                                    their employees and associated personnel and volunteers,including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the
+                                    registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities, which transportation.</span>
+                                <label for="signature">
+                                    <span>Parent/GuardianSignature:</span>
+                                    <input type="text" id="signature" name="signature">
+                                </label>
+                                <label for="date">
+                                    <span>Date:</span>
+                                    <input type="text" id="date" name="date">
+                                </label>
+                            </fieldset>
+                            <input class="submit_button" type="submit">
+                        </form>
+                    </article>
+                    </div>
+                    
+                    </main>
+                    <footer>
+                        <h3>made by me</h3>
+                    </footer>
+                    </body>
+                    
+                    </html>
